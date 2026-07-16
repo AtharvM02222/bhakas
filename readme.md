@@ -1,10 +1,15 @@
+setup cmd
+npx express-generator --view=ejs
+npm i
 
+pkg.json '"type": "module",'
+|-ES Modules
 
+nodemon install
+|- "dev": "nodemon server.js",    "start": "node server.js"
 
-
-
-
-
+use ` ` 
+|- console.log(`bhakas running at ${bhakas_port}`);
 
 
 # Commit Types
