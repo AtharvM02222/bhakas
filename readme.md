@@ -16,6 +16,8 @@ animations
 
 npm install express-ejs-layouts
 
+<model-viewer>
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
 # Commit Types
 
