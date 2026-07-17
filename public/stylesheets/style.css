@@ -9,3 +9,27 @@
     animation-iteration-count: infinite !important;
   }
 }
+.branding {
+    animation: bounceInLeft 1.2s;
+    padding-left: 45px;
+    padding-top: 15px;
+    font-size: 22px;
+}
+
+.branding a {
+    text-decoration: none;
+}
+
+#tech {
+    color: rgb(22, 225, 110);
+}
+
+#Syndicate {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.branding a:hover #Syndicate {
+    color: rgb(22, 225, 110);
+    transition: color 0.3s ease;
+}
