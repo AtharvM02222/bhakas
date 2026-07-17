@@ -4,6 +4,7 @@ import path from 'path';
 import cookieParser from 'cookie-parser';
 import logger from 'morgan';
 import { fileURLToPath } from 'url';
+import expressLayouts from 'express-ejs-layouts';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -16,6 +17,8 @@ var bhakas = express();
 // view engine setup
 bhakas.set('views', path.join(__dirname, 'views'));
 bhakas.set('view engine', 'ejs');
+bhakas.use(expressLayouts);
+bhakas.set('layout', 'layout');
 
 bhakas.use(logger('dev'));
 bhakas.use(express.json());

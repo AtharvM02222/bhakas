@@ -11,6 +11,11 @@ nodemon install
 use ` ` 
 |- console.log(`bhakas running at ${bhakas_port}`);
 
+animations
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
+
+npm install express-ejs-layouts
+
 
 # Commit Types
 
