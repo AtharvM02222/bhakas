@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+3D&display=swap');
+
 .branding {
     animation: bounceInLeft 1.2s;
     padding-left: 45px;
@@ -27,4 +29,11 @@
 .qwertyuiop{
     background-color:  rgb(22, 22, 22);
     border-radius: 32px;
+}
+
+.asdfghjkl{
+    font-family: "Rock 3D", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
 }
