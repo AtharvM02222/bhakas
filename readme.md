@@ -19,6 +19,12 @@ npm install express-ejs-layouts
 <model-viewer>
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
+pick a primary colour
+pick a secondary or accent colour
+pick neutrals
+60% Neutrals
+30% Primary Color
+10% Secondary/Accent Color
 # Commit Types
 
 | Type | Use For |
