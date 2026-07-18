@@ -6,13 +6,16 @@
     font-style: normal;
 }
 .branding {
-    animation: bounceInLeft 1.2s;
+    animation: bounceInLeft 1.7s;
     padding-left: 45px;
     padding-top: 15px;
     font-size: 22px;
 }
 
 .branding a {
+    display: flex;
+    align-items: center;
+    gap: 7px;
     text-decoration: none;
 }
 
@@ -25,11 +28,16 @@
     transition: color 0.3s ease;
 }
 
+#tslogo{
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
 .branding a:hover #Syndicate {
     color: rgb(22, 225, 110);
     transition: color 0.3s ease;
 }
-
 
 .qwertyuiop{
     background-color:  rgb(22, 22, 22);
@@ -51,14 +59,18 @@
 #tswashere {
     font-family: blowbrush;
 
-    background: linear-gradient(to right, #16e16e, #ffffff);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    animation: bounceInLeft 2.2s;
 
     letter-spacing: 7px;
     position: absolute;
     bottom: 20px;
     left: 44px;
     z-index: 100;
+}
+
+.masthaye{
+    background: linear-gradient(to right, #16e16e, #ffffff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
