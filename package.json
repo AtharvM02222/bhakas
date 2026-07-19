@@ -8,6 +8,7 @@
     "start": "node bhakas.js"
   },
   "dependencies": {
+    "@imgly/background-removal-node": "^1.4.5",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "ejs": "~2.6.1",

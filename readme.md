@@ -25,6 +25,22 @@ pick neutrals
 60% Neutrals
 30% Primary Color
 10% Secondary/Accent Color
+
+<%= typeof title !== 'undefined' ? title : 'Tech Syndicate' %><
+need to add in layout 
+idk Y
+
+. { position: relative; } 
+
+#{
+  position: absolute;
+  top: ;      
+  left: ;      
+  width: ;
+  height: ;
+  transform: rotate();
+}
+
 # Commit Types
 
 | Type | Use For |
