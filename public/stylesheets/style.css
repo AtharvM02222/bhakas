@@ -112,43 +112,9 @@
 
 #shop:hover {
     color: rgb(22, 225, 110);
-
 }
 
 .navbar, #brandingg {
   position: relative;
   z-index: 999;
 }
-
-/*
-. { position: relative; }
-
-#{
-  position: absolute;
-  top: ;
-  left: ;
-  width: ;
-  height: ;
-  transform: rotate();
-}
-*/
-
-.kuchtohai{
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-}
-
-.card {
-  position: absolute;
-  overflow: hidden;
-}
-
-.card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-/*------------------------ab itna kaam --------------------------*/
