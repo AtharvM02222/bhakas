@@ -141,25 +141,25 @@
 
 /* ye toh itna easy tha */
 
-.card img {
+.card {
     animation: float 4s ease-in-out infinite;
 }
 
 @keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50%      { transform: translateY(-10px); }
+    0%, 100% { translate: 0 0; }
+    50%      { translate: 0 -10px; }
 }
 
-#card-hoodie img   { animation-delay: 0s; }
-#card-tshirt img   { animation-delay: .3s; }
-#card-drink img    { animation-delay: .6s; }
-#card-cap img      { animation-delay: .9s; }
-#card-mug img      { animation-delay: .2s; }
-#card-pendrive img { animation-delay: .5s; }
-#card-case img     { animation-delay: .8s; }
-#card-smallbag img { animation-delay: .1s; }
-#card-purse img    { animation-delay: .4s; }
-#card-slingbag img { animation-delay: .7s; }
-#card-tslap img    { animation-delay: .35s; }
-#card-sticky img   { animation-delay: .65s; }
-#card-notebook img { animation-delay: .95s; }
+#card-hoodie   { animation-delay: 0s; }
+#card-tshirt   { animation-delay: .3s; }
+#card-drink    { animation-delay: .6s; }
+#card-cap      { animation-delay: .9s; }
+#card-mug      { animation-delay: .2s; }
+#card-pendrive { animation-delay: .5s; }
+#card-case     { animation-delay: .8s; }
+#card-smallbag { animation-delay: .1s; }
+#card-purse    { animation-delay: .4s; }
+#card-slingbag { animation-delay: .7s; }
+#card-tslap    { animation-delay: .35s; }
+#card-sticky   { animation-delay: .65s; }
+#card-notebook { animation-delay: .95s; }
