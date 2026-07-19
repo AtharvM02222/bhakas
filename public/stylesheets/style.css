@@ -6,10 +6,16 @@
     font-style: normal;
 }
 .branding {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px 45px;
+    box-sizing: border-box;
+}
+
+#brandingg{
     animation: bounceInLeft 1.7s;
-    padding-left: 45px;
-    padding-top: 15px;
-    font-size: 22px;
 }
 
 .branding a {
@@ -73,4 +79,27 @@
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+}
+
+#nav {
+    display: flex;
+    gap: 40px;
+}
+
+#nav a {
+    text-decoration: none;
+    color: red;
+    font-family: blowbrush;
+    font-size: 2rem;
+    transition: color 0.3s ease;
+    letter-spacing: 3px;
+}
+
+#about:hover {
+    color: rgb(22, 225, 110);
+}
+
+#shop:hover {
+    color: rgb(22, 225, 110);
+
 }
