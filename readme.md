@@ -1,45 +1,141 @@
-setup cmd
+## Initial Setup
+
+```bash
 npx express-generator --view=ejs
-npm i
+npm install
+```
 
-pkg.json '"type": "module",'
-|-ES Modules
+### Enable ES Modules
 
-nodemon install
-|- "dev": "nodemon server.js",    "start": "node server.js"
+In `package.json`:
 
-use ` ` 
-|- console.log(`bhakas running at ${bhakas_port}`);
-
-animations
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
-
-npm install express-ejs-layouts
-
-<model-viewer>
-<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-
-pick a primary colour
-pick a secondary or accent colour
-pick neutrals
-60% Neutrals
-30% Primary Color
-10% Secondary/Accent Color
-
-<%= typeof title !== 'undefined' ? title : 'Tech Syndicate' %><
-need to add in layout 
-idk Y
-
-. { position: relative; } 
-
-#{
-  position: absolute;
-  top: ;      
-  left: ;      
-  width: ;
-  height: ;
-  transform: rotate();
+```json
+{
+  "type": "module"
 }
+```
+
+---
+
+## Nodemon Setup
+
+Install:
+
+```bash
+npm install --save-dev nodemon
+```
+
+In `package.json`:
+
+```json
+{
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  }
+}
+```
+
+---
+
+## Template Literals
+
+Use backticks (`` ` ``) instead of quotes.
+
+```js
+console.log(`bhakas running at ${bhakas_port}`);
+```
+
+---
+
+## Animate.css
+
+```html
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+/>
+```
+
+---
+
+## Express EJS Layouts
+
+Install:
+
+```bash
+npm install express-ejs-layouts
+```
+
+---
+
+## Model Viewer
+
+```html
+<script
+  type="module"
+  src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+</script>
+```
+
+Use:
+
+```html
+<model-viewer></model-viewer>
+```
+
+---
+
+# UI Design
+
+## Color Rule (60-30-10)
+
+- **60%** → Neutral colors
+- **30%** → Primary color
+- **10%** → Secondary / Accent color
+
+Choose:
+
+- Primary Color
+- Secondary (Accent) Color
+- Neutral Palette
+
+---
+
+## Dynamic EJS Title
+
+```ejs
+<title><%= typeof title !== 'undefined' ? title : 'Tech Syndicate' %></title>
+```
+
+---
+
+## Responsive Units
+
+> **Bhavit Bhaiya says:** Use `vw` whenever appropriate for responsive sizing.
+
+---
+
+# Useful Documentation
+
+- EJS Docs  
+  https://ejs.co/#docs
+
+- Passport.js Middleware  
+  https://www.passportjs.org/concepts/authentication/middleware/
+
+- Express Session  
+  https://www.npmjs.com/package/express-session
+
+- Mongoose Guide  
+  https://mongoosejs.com/docs/guide.html
+
+- Socket.IO Rooms  
+  https://socket.io/docs/v4/rooms/
+
+
+
+
 
 # Commit Types
 

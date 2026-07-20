@@ -16,4 +16,9 @@ router.get('/shop', function(req, res, next) {
   res.render('shop');
 });
 
+/* GET auth page. */
+router.get('/auth', function(req, res, next) {
+  res.render('auth');
+});
+
 export default router;
