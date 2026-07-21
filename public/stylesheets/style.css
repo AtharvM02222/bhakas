@@ -118,25 +118,3 @@
   position: relative;
   z-index: 999;
 }
-
-.bhakas-docker{
-    width: 65vw;
-    height: 82vh;
-
-    margin: 2vh auto 0;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.auth-section{
-    background-color: rgb(22, 225, 110);
-    height: 65vh;
-    width: 122vh;
-    border-radius: 34px;
-}
-
-#header-auth{
-    text-align: center;
-}
