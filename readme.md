@@ -133,7 +133,22 @@ Choose:
 - Socket.IO Rooms  
   https://socket.io/docs/v4/rooms/
 
+import mongoose from 'mongoose';
 
+export async function connectToMongoDB() {
+  try {
+    await mongoose.connect("mongodb+srv://admin:<db_password>@bhakas.etrjipd.mongodb.net/?appName=Bhakas");
+    console.log("You successfully connected to MongoDB!");
+    return mongoose;
+  } catch (err) {
+    console.dir(err);
+  }
+}
+
+// Call this only when your application terminates
+export async function disconnectFromMongoDB() {
+  await mongoose.connection.close();
+}
 
 
 
