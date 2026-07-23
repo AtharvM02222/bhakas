@@ -5,6 +5,7 @@ import cookieParser from 'cookie-parser';
 import logger from 'morgan';
 import { fileURLToPath } from 'url';
 import expressLayouts from 'express-ejs-layouts';
+import { firebaseConfig } from './public/javascripts/db.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -25,6 +26,11 @@ bhakas.use(express.json());
 bhakas.use(express.urlencoded({ extended: false }));
 bhakas.use(cookieParser());
 bhakas.use(express.static(path.join(__dirname, 'public')));
+
+bhakas.use((req, res, next) => {
+  res.locals.firebaseConfig = JSON.stringify(firebaseConfig);
+  next();
+});
 
 bhakas.use('/', indexRouter);
 bhakas.use('/users', usersRouter);
