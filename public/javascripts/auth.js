@@ -3,8 +3,24 @@ import { signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/1
 
 document.querySelector(".authhh").addEventListener("submit", async (e) => {
   e.preventDefault()
-  const email = document.getElementById("maill").value
+  let email = document.getElementById("maill").value
   const password = document.getElementById("psdd").value
-  await signInWithEmailAndPassword(auth, email, password)
-  window.location.href = "/shop"
+
+  if (email === 'admin') {
+    email = 'admin@bhakas.com';
+  }
+
+  try {
+    const userCredential = await signInWithEmailAndPassword(auth, email, password)
+
+    if (userCredential.user.email === 'admin@bhakas.com') {
+      document.cookie = "admin=true; path=/";
+      window.location.href = "/admin";
+    } else {
+      window.location.href = "/shop";
+    }
+  } catch (bhakas) {
+    console.error("Error during login:", bhakas);
+    alert("Login failed: " + bhakas.message);
+  }
 })

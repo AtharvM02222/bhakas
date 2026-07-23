@@ -1,3 +1,4 @@
+/*
 import { removeBackground } from "@imgly/background-removal-node";
 import fs from "fs";
 import path from "path";
@@ -21,3 +22,4 @@ async function run() {
 }
 
 run();
+*/

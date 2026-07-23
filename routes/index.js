@@ -26,4 +26,13 @@ router.get('/signup', function(req, res, next) {
   res.render('signup');
 });
 
+/* GET admin page. */
+router.get('/admin', function(req, res, next) {
+  if (req.cookies.admin === 'true') {
+    res.render('admin');
+  } else {
+    res.redirect('/auth');
+  }
+});
+
 export default router;
