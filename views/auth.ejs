@@ -1,19 +1,24 @@
 <head>
-    <link rel="stylesheet" href="/stylesheets/auth.css"
+    <link rel="stylesheet" href="/stylesheets/auth.css">
 </head>
 
 <div class="bhakas-docker">
-
     <div class="auth-section">
-        <div class="sign-in">
-        <h1 id="header-auth">Sign Into Account</h1>
-        <form class="authhh">
-        <input type="email" placeholder="admin" class="bhakas-holder" id="maill">
-        <input type="password" placeholder="adminhunter" class="bhakas-holder" id="psdd">
-        <button type="submit" id="jaadu">Enter</button>
-        </form>
+        <div class="form-side">
+            <h2 class="brand">Tech<span>Syndicate</span></h2>
+            <h1 id="header-auth">Sign in to Account</h1>
+            <form class="authhh">
+                <input type="email" placeholder="Email" class="bhakas-holder" id="maill">
+                <input type="password" placeholder="Password" class="bhakas-holder" id="psdd">
+                <button type="submit" id="jaadu">Sign In</button>
+            </form>
         </div>
-
+        <div class="side-panel">
+            <h2>Hello, Friend!</h2>
+            <p>Fill up personal info and start your journey with us.</p>
+            <a href="/signup" class="ghost-btn">Sign Up</a>
+        </div>
     </div>
-
 </div>
+
+<script type="module" src="/javascripts/auth.js"></script>

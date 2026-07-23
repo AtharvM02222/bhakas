@@ -1,5 +1,6 @@
-const { initializeApp } = require('firebase/app');
-require('dotenv').config();
+import { initializeApp } from 'firebase/app'
+import dotenv from 'dotenv'
+dotenv.config()
 
 const firebaseConfig = {
   apiKey: process.env.FIREBASE_API_KEY,
@@ -8,8 +9,7 @@ const firebaseConfig = {
   storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
   messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
   appId: process.env.FIREBASE_APP_ID
-};
+}
 
-const app = initializeApp(firebaseConfig);
-
-module.exports = app;
+const app = initializeApp(firebaseConfig)
+export default app

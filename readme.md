@@ -116,6 +116,16 @@ Choose:
 
 ---
 
+## Firebase
+
+- [Setup](https://firebase.google.com/docs/web/setup)
+- [Auth (signup/login)](https://firebase.google.com/docs/auth/web/password-auth)
+- [Firestore add data](https://firebase.google.com/docs/firestore/manage-data/add-data)
+- [Firestore get + map data](https://firebase.google.com/docs/firestore/query-data/get-data)
+- [Firestore realtime listener (chat)](https://firebase.google.com/docs/firestore/query-data/listen)
+- [Firestore query/orderBy](https://firebase.google.com/docs/firestore/query-data/order-limit-data)
+- [Security rules](https://firebase.google.com/docs/firestore/security/rules-structure)
+
 # Commit Types
 
 | Type | Use For |

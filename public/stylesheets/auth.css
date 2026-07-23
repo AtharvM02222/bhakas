@@ -1,70 +1,98 @@
 .bhakas-docker {
     width: 100vw;
     height: 82vh;
-
     display: flex;
     justify-content: center;
-
     font-family: blowbrush;
     color: white;
 
+    letter-spacing: 7%;
 }
 
 .auth-section {
-    background-color: rgb(22, 225, 110);
-
-    width: 47vw;
+    background-color: white;
+    color: #161616;
+    width: 60vw;
     height: 32vw;
-
     border-radius: 2vw;
-
     display: flex;
-    justify-content: center;
-    align-items: center;
-
+    overflow: hidden;
     margin-top: 4vw;
 }
 
-#header-auth {
-    text-align: center;
+.auth-section.reverse {
+    flex-direction: row-reverse;
 }
+
+.form-side {
+    flex: 1.4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2vw;
+}
+
+.brand {
+    margin-left: 1vw;
+}
+
+.brand span {
+    color: rgb(22, 225, 110);
+}
+
+#header-auth { text-align: center; }
 
 .authhh {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2vw;
+    gap: 1.5vw;
 }
 
 .bhakas-holder {
-    width: 40vw;
-    height: 7vh;
-
+    width: 24vw;
+    height: 6vh;
     padding-left: 2vh;
-    letter-spacing: 7%;
-
-    border: none;
-    border-radius: 1.25vw;
-
+    border: 1px solid #ddd;
+    border-radius: 1vw;
     font-family: inherit;
-    font-size: 1.375vw;
+    font-size: 1vw;
 }
 
 #jaadu {
-    width: 17vw;
-    height: 7vh;
-
-    margin-top: 2vh;
-
-    background-color: #161616;
+    width: 12vw;
+    height: 6vh;
+    margin-top: 1vh;
+    background-color: rgb(22, 225, 110);
     color: white;
-
     border: none;
     border-radius: 1.5vw;
-
     font-family: inherit;
-    font-size: 2vw;
-
+    font-size: 1.2vw;
     cursor: pointer;
+}
+
+.side-panel {
+    flex: 1;
+    background-color: rgb(22, 225, 110);
+    display: flex;
+    font-size: 2vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2vw;
+    gap: 1vw;
+    color: white;
+}
+
+.ghost-btn {
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    padding: 1vh 2vw;
+    border-radius: 2vw;
+    margin-top: 2vh;
 }

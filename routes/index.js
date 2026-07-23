@@ -21,4 +21,9 @@ router.get('/auth', function(req, res, next) {
   res.render('auth');
 });
 
+/* GET signup page. */
+router.get('/signup', function(req, res, next) {
+  res.render('signup');
+});
+
 export default router;
